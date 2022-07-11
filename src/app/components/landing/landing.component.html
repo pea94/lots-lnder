@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#home">Lnder</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/features" class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/pricing" class="nav-link" href="#pricing">Pricing</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<main id="landing">
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="../../../assets/images/landing.png"
+                    class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500"
+                    loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3 text-white">Run your Microlending Business without any hassles </h1>
+                <p class="lead text-white">A simple, fast and scalable loan management system that helps you manage your
+                    microlending business easily
+                    and deliver online services to your existing and potential clients.
+                </p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <a routerLink="/login" type="button" class="btn btn-warning btn-lg px-4 me-md-2">Demo</a>
+                    <a routerLink="/features" href="#features" type="button" class="btn btn-outline-warning btn-lg px-4">Features</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

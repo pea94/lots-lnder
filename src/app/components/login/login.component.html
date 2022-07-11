@@ -1,0 +1,29 @@
+    <app-header title="Lnder Demo"></app-header>
+
+    <div class="form-signin px-3">
+        <div class="text-center">
+            <img src="../../../assets/images/logo.png" alt="" style="width:80%;" srcset="">
+        </div>
+        <h1 class="text-center">Demo App Login</h1>
+        <form [formGroup]="loginForm">
+          <mat-form-field>
+            <input matInput placeholder="Email address" formControlName="email"  />
+            <mat-error *ngIf="email?.errors?.['required']">
+              Email address is required
+            </mat-error>
+            <mat-error *ngIf="email?.errors?.['email']">
+              Please enter a valid email address
+            </mat-error>
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput type="password" placeholder="Password" formControlName="password" />
+            <mat-error *ngIf="password?.errors?.['required']">
+              Password is required
+            </mat-error>
+          </mat-form-field>
+          <div class="center margin-top my-3">
+              <button type="submit" mat-raised-button color="primary">Login</button>
+          </div>
+          <span class="center margin-top">New to our platform? <a class="sign-up-link" routerLink="/signup">Sign up!</a></span>
+        </form>
+      </div>
